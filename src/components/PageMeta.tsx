@@ -39,6 +39,11 @@ function applyPageMeta(title: string, description: string) {
     property: "og:type",
   });
   ogType.setAttribute("content", "website");
+
+  const ogImage = ensureMeta('meta[property="og:image"]', {
+    property: "og:image",
+  });
+  ogImage.setAttribute("content", "/og-image.svg");
 }
 
 export function PageMeta({ title, description }: PageMetaProps) {

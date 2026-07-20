@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  <circle cx="980" cy="80" r="220" fill="#47D028" fill-opacity="0.12"/>
+  <circle cx="160" cy="560" r="180" fill="#D61E3A" fill-opacity="0.08"/>
+  <g transform="translate(96, 180)">
+    <path d="M40 4L72 22V58L40 76L8 58V22L40 4Z" stroke="#47D028" stroke-width="3"/>
+    <path d="M24 46L38 26L46 40L58 30L44 58H36L24 46Z" fill="#47D028"/>
+    <text x="92" y="36" fill="#F2F2F2" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">Exploit Strike</text>
+    <text x="92" y="68" fill="#9A9A9A" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="4">EXPLOIT SHIELD</text>
+  </g>
+  <text x="96" y="340" fill="#F2F2F2" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">Hunt leaks outside</text>
+  <text x="96" y="410" fill="#F2F2F2" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">your perimeter.</text>
+  <text x="96" y="470" fill="#9A9A9A" font-family="Arial, Helvetica, sans-serif" font-size="26">Continuous OSINT threat intelligence for exposed credentials and secrets.</text>
+</svg>
