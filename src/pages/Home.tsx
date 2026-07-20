@@ -60,7 +60,7 @@ export function Home() {
             assessments often miss exposures that never lived on authorized systems.
           </p>
         </div>
-        <div className="grid-3">
+        <div className="grid-4">
           {capabilities.map((item) => (
             <CapabilityCard
               key={item.title}
@@ -98,6 +98,23 @@ export function Home() {
       </Section>
 
       <Section tone="surface">
+        <div className="hero-grid">
+          <div className="section-heading">
+            <p className="eyebrow">Actionable threat intelligence</p>
+            <h2 className="section-title">
+              Findings include a leak summary, artifact inventory, and attribution
+            </h2>
+            <p className="section-lead">
+              Every Exploit Shield finding is structured for response—not just an alert.
+              See where the leak lives, what was exposed, and how confidently it attributes
+              back to your environment or partners.
+            </p>
+          </div>
+          <FindingCard />
+        </div>
+      </Section>
+
+      <Section>
         <div className="stack-grid">
           <div className="section-heading">
             <p className="eyebrow">Where Exploit Shield sits</p>
