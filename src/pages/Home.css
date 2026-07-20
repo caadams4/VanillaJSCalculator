@@ -1,0 +1,134 @@
+.hero-section .section-inner {
+  gap: 2rem;
+}
+
+.hero-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-copy {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  max-width: 14ch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hero-note {
+  font-size: 0.9rem;
+}
+
+.split-heading,
+.stack-grid,
+.benefits-grid,
+.ai-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.stack-compare {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.stack-card {
+  padding: 1.15rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.stack-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.stack-card p {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.stack-card.is-highlight {
+  border-color: rgba(71, 208, 40, 0.35);
+  background: var(--lime-soft);
+}
+
+.stack-card.is-highlight h3 {
+  color: var(--lime);
+}
+
+.benefit-list,
+.ai-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.benefit-list li,
+.ai-list li {
+  position: relative;
+  padding: 1rem 1rem 1rem 2.4rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--muted);
+}
+
+.benefit-list li::before,
+.ai-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0.95rem;
+  top: 1rem;
+  color: var(--lime);
+  font-weight: 700;
+}
+
+.case-card {
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+}
+
+.case-meta {
+  color: var(--crimson);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.text-link {
+  color: var(--lime);
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin-top: 0.35rem;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 960px) {
+  .hero-grid,
+  .split-heading,
+  .stack-grid,
+  .benefits-grid,
+  .ai-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: start;
+  }
+
+  .stack-compare {
+    grid-template-columns: 1fr;
+  }
+}

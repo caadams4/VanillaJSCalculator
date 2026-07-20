@@ -1,0 +1,125 @@
+.finding-card {
+  background:
+    linear-gradient(180deg, rgba(26, 33, 28, 0.95), rgba(14, 16, 14, 0.98));
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  padding: 1.35rem;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 1.15rem;
+}
+
+.finding-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.finding-card-header h3 {
+  font-size: 1.25rem;
+  margin-top: 0.35rem;
+}
+
+.finding-kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.risk-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: var(--radius-pill);
+  background: var(--crimson-soft);
+  color: #ff8a9a;
+  border: 1px solid rgba(214, 30, 58, 0.35);
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.finding-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.finding-meta div {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+}
+
+.finding-meta span {
+  color: var(--muted-2);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.finding-meta strong {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.finding-inventory {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.finding-inventory-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.finding-inventory-title span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.finding-inventory ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.finding-inventory li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: var(--radius-md);
+  background: var(--lime-soft);
+  border: 1px solid rgba(71, 208, 40, 0.18);
+}
+
+.finding-inventory li span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.finding-attribution {
+  display: grid;
+  gap: 0.75rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--border);
+}
+
+.finding-attribution h4 {
+  font-size: 1.05rem;
+}
+
+@media (min-width: 900px) {
+  .finding-meta {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

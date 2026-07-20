@@ -1,0 +1,33 @@
+.section {
+  padding: 5rem 0;
+  position: relative;
+}
+
+.section-inner {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.section-surface {
+  background: linear-gradient(180deg, rgba(18, 22, 18, 0.9), rgba(10, 10, 10, 0.4));
+  border-block: 1px solid var(--border);
+}
+
+.section-contrast {
+  background:
+    radial-gradient(circle at top right, rgba(71, 208, 40, 0.12), transparent 40%),
+    linear-gradient(180deg, #0d120e, #0a0a0a);
+  border-block: 1px solid var(--border);
+}
+
+.section-heading {
+  display: grid;
+  gap: 1rem;
+  max-width: 720px;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+}

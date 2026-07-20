@@ -1,0 +1,45 @@
+.source-pills {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.source-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.source-pills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+}
+
+.pill-live {
+  background: var(--lime-soft);
+  border-color: rgba(71, 208, 40, 0.28);
+  color: var(--text);
+}
+
+.pill-live span {
+  color: var(--lime);
+}
+
+.pill-soon {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+}

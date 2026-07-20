@@ -1,61 +1,24 @@
-<
-<html>
-  <header>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Exploit Shield by Exploit Strike: continuous OSINT threat intelligence that hunts leaked credentials and secrets on public developer platforms."
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styleSheet.css" />
-  </header>
-
+    <meta property="og:title" content="Exploit Shield | Threat Intelligence — Exploit Strike" />
+    <meta
+      property="og:description"
+      content="Hunt leaks outside your perimeter. Continuous OSINT monitoring for exposed credentials, tokens, and sensitive artifacts."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Exploit Shield | Threat Intelligence — Exploit Strike</title>
+  </head>
   <body>
-    <header>
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-      />
-    </header>
-
-    <section class="Calculator">
-      <div className="CalcRow">
-        <div id="CalcDisplay">Welcome!</div>
-      </div>
-      <div className="CalcRow">
-        <button class="calc_button" id="calcAllClear">AC</button>
-        <button class="calc_button" id="calcClear">C</button>
-        <button class="calc_button" id="calcEquals">=</button>
-      </div>
-      <div className="CalcRow">
-        <button class="calc_button" id="calc7">7</button>
-        <button class="calc_button" id="calc8">8</button>
-        <button class="calc_button" id="calc9">9</button>
-        <button class="calc_button" id="calcDiv">/</button>
-      </div>
-      <div className="CalcRow">
-        <button class="calc_button" id="calc4">4</button>
-        <button class="calc_button" id="calc5">5</button>
-        <button class="calc_button" id="calc6">6</button>
-        <button class="calc_button" id="calcMinus">-</button>
-      </div>
-      <div className="CalcRow">
-        <button class="calc_button" id="calc1">1</button>
-        <button class="calc_button" id="calc2">2</button>
-        <button class="calc_button" id="calc3">3</button>
-        <button class="calc_button" id="calcPlus">+</button>
-      </div>
-      <div className="CalcRow">
-        <button class="calc_button" id="calcNeg">(-)</button>
-        <button class="calc_button" id="calc0">0</button>
-        <button class="calc_button" id="calcDec">.</button>
-        <button class="calc_button" id="calcMult">*</button>
-      </div>
-    </section>
-
-    <div class="text-center" id="like_button">
-      <button>Like</button>
-    </div>
-
-    <script src="like_button.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
